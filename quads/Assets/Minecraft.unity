@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 252942449}
   - component: {fileID: 252942448}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Chunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -207,11 +207,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 252942447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bbf286742bb83f4d910465990c80357, type: 3}
+  m_Script: {fileID: 11500000, guid: 51760ec08f602e442acf06b81dcad766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cubeMaterial: {fileID: 2100000, guid: 2e3b25e0027214f45ac7c44e89d17d04, type: 2}
-  bType: 0
 --- !u!4 &252942449
 Transform:
   m_ObjectHideFlags: 0

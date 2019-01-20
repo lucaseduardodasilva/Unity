@@ -61,6 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Block.cs" />
+    <Compile Include="Assets\CameraController.cs" />
+    <Compile Include="Assets\Chunk.cs" />
     <Compile Include="Assets\CreateQuads.cs" />
     <Compile Include="Assets\ProcessTextureAtlas.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
