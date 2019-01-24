@@ -1,0 +1,2 @@
+C:\Users\Lucas\Desktop\Unity\quads\quads\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Lucas\Desktop\Unity\quads\quads\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

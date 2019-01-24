@@ -181,7 +181,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &252942447
+--- !u!1 &379340342
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -189,37 +189,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 252942449}
-  - component: {fileID: 252942448}
+  - component: {fileID: 379340344}
+  - component: {fileID: 379340343}
   m_Layer: 0
-  m_Name: Chunk
+  m_Name: World
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &252942448
+--- !u!114 &379340343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 252942447}
+  m_GameObject: {fileID: 379340342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51760ec08f602e442acf06b81dcad766, type: 3}
+  m_Script: {fileID: 11500000, guid: 6476e3f4de6c4f4449fdd7c8f17b9844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubeMaterial: {fileID: 2100000, guid: 2e3b25e0027214f45ac7c44e89d17d04, type: 2}
---- !u!4 &252942449
+  textureAtlas: {fileID: 2100000, guid: 2e3b25e0027214f45ac7c44e89d17d04, type: 2}
+--- !u!4 &379340344
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 252942447}
+  m_GameObject: {fileID: 379340342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5060426, y: -0.37786257, z: 0.50501406}
+  m_LocalPosition: {x: 6.1206274, y: 5.1250725, z: 0.16130829}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -9,7 +9,7 @@ public class Block
 
     public BlockType bType;
     public bool isSolid;
-    Material cubeMaterial;    
+    Chunk owner;    
     GameObject parent;
     Vector3 position;
 
@@ -33,12 +33,12 @@ public class Block
             new Vector2(0, 0.9375f), new Vector2(0.0625f, 0.9375f)}
     };
 
-    public Block(BlockType b, Vector3 pos, GameObject p, Material c)
+    public Block(BlockType b, Vector3 pos, GameObject p, Chunk o)
     {
         bType = b;
+        owner = o;
         parent = p;
         position = pos;
-        cubeMaterial = c;
 
         if (bType == BlockType.AIR)
             isSolid = false;
@@ -56,10 +56,10 @@ public class Block
         Vector2[] uvs = new Vector2[4];
         int[] triangles = new int[6];
 
-        Vector2 uv00 = new Vector2(0f, 0f);
-        Vector2 uv10 = new Vector2(1f, 0f);
-        Vector2 uv01 = new Vector2(0f, 1f);
-        Vector2 uv11 = new Vector2(1f, 1f);
+        Vector2 uv00;
+        Vector2 uv10;
+        Vector2 uv01;
+        Vector2 uv11;
 
         if (bType == BlockType.GRASS && side == Cubeside.TOP)
         {
@@ -146,9 +146,6 @@ public class Block
 
         MeshFilter meshFilter = (MeshFilter)quad.AddComponent(typeof(MeshFilter));
         meshFilter.mesh = mesh;
-
-        //MeshRenderer renderer = quad.AddComponent(typeof(MeshRenderer)) as MeshRenderer;
-        //renderer.material = cubeMaterial;
     }
 
     public bool HasSolidNeighbour(int x, int y, int z)

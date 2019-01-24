@@ -66,6 +66,7 @@
     <Compile Include="Assets\Chunk.cs" />
     <Compile Include="Assets\CreateQuads.cs" />
     <Compile Include="Assets\ProcessTextureAtlas.cs" />
+    <Compile Include="Assets\World.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Lucas/Desktop/Unity/quads/quads/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
