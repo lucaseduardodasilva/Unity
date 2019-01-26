@@ -142,7 +142,7 @@ public class Block
 
         GameObject quad = new GameObject("Quad");
         quad.transform.position = position;
-        quad.transform.parent = parent.transform;
+        quad.transform.parent = this.parent.transform;
 
         MeshFilter meshFilter = (MeshFilter)quad.AddComponent(typeof(MeshFilter));
         meshFilter.mesh = mesh;
@@ -150,7 +150,8 @@ public class Block
 
     public bool HasSolidNeighbour(int x, int y, int z)
     {
-        Block[,,] chunks = parent.GetComponent<Chunk>().chunkData;
+        Block[,,] chunks;
+        chunks = owner.chunkData;
 
         try
         {
