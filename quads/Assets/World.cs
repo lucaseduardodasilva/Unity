@@ -6,8 +6,8 @@ public class World : MonoBehaviour
 {
 
     public Material textureAtlas;
-    public static int columnHeight = 16;
-    public static int chunkSize = 16;
+    public static int columnHeight = 8;
+    public static int chunkSize = 4;
     public static Dictionary<string, Chunk> chunks;
 
     public static string BuildChunkName(Vector3 v)
